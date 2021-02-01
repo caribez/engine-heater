@@ -15,5 +15,8 @@ function execute() {
   
   let lerpValue = (currentTemp - minTemp) / (maxTemp - minTemp);  
   
-  document.getElementById("result").innerHTML = "Use the heater approx: " + lerp_clip(maxTime, minTime, lerpValue) * 60 + " minutes";
+  let result = lerp_clip(maxTime, minTime, lerpValue) * 60.0;
+  result = +(result).toPrecision(4);
+  
+  document.getElementById("result").innerHTML = "Use the heater approx: " + result + " minutes";
 }
