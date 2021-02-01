@@ -1,7 +1,7 @@
-var minTemp = -15.0;
+var minTemp = -20.0;
 var maxTemp = 22.5;
 var minTime = 0.0;
-var maxTime = 1.5;
+var maxTime =  3.0;
 
 function lerp_clip(min, max, lerp) {
   if (lerp > 1.0) lerp = 1.0;
